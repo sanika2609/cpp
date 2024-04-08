@@ -1,0 +1,32 @@
+#include <iostream>
+void printEvenOdd(int start, int end) {
+    std::cout << "Even numbers between " << start << " and " << end << " are: ";
+    for (int i = start; i <= end; i++) {
+        if (i % 2 == 0) {
+            std::cout << i << " ";
+        }
+    }
+    std::cout << std::endl;
+
+    std::cout << "Odd numbers between " << start << " and " << end << " are: ";
+    for (int i = start; i <= end; i++) {
+        if (i % 2 != 0) {
+            std::cout << i << " ";
+        }
+    }
+    std::cout << std::endl;
+}
+int main() {
+    int start, end;
+    
+    std::cout << "Enter the starting number: ";
+    std::cin >> start;
+    
+    std::cout << "Enter the ending number: ";
+    std::cin >> end;
+    
+    // Call the function to print even and odd numbers
+    printEvenOdd(start, end);
+    
+    return 0;
+}

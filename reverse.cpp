@@ -1,18 +1,15 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int i, n;
-
-    cout<<"Enter value of n";
-    cin>>n;
-
-    cout<<"reverse order ",n;
-
-    for(i=n; i>=1; i--)
+    int i,rev=0;
+    cout<<"Enter number";
+    cin>>i;
+    while(i>0)
     {
-        cout<< i;
+        rev=(rev*10)+i%10;
+        i=i/10;
     }
-
+    cout<<"Reverse of number is="<<rev;
     return 0;
 }

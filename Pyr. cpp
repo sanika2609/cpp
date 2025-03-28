@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int var = 10;  // Regular variable
+    int *ptr;      // Pointer declaration
+
+    // Point the pointer to the address of var
+    ptr = &var;
+
+    cout << "Value of var: " << var << endl;
+    cout << "Address of var: " << &var << endl;
+    cout << "Pointer ptr is pointing to address: " << ptr << endl;
+    cout << "Value stored at address pointed by ptr: " << *ptr << endl;
+
+    // Modify value of var using pointer
+    *ptr = 20;
+
+    cout << "\nAfter modifying value using pointer:\n";
+    cout << "Value of var: " << var << endl;
+    cout << "Value stored at address pointed by ptr: " << *ptr << endl;
+
+    return 0;
+}
